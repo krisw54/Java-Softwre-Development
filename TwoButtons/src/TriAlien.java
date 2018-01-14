@@ -1,0 +1,53 @@
+import java.awt.*;
+
+public class TriAlien extends Alien
+{
+    private Color legColour;
+    
+    public TriAlien()
+    {
+        this(0, 0, Color.BLACK);
+    }
+    
+    public TriAlien(int firstX, int firstY, Color legColour)
+    {
+        super(firstX, firstY);
+        this.legColour = legColour;
+    }
+    
+    public void setLegColour(Color c)
+    {
+        legColour = c;
+    }
+
+    @Override
+    public void paint(Graphics g)
+    {
+        int x = getX();
+        int y = getY();
+        
+        int[] xs = {x, x+28, x+56};
+        int[] ys = {y+60, y, y+60};
+        
+        g.setColor(getBodyColour());
+        //draw the body
+        g.fillPolygon(xs, ys, 3);
+        
+        g.setColor(Color.BLACK);
+        //draw the eyes
+        g.fillOval(x+14, y+12, 12, 12);
+        g.fillOval(x+31, y+12, 12, 12);
+        //draw the nose
+        g.fillOval(x+26, y+18, 5, 15);
+        //draw the mouth
+        g.fillOval(x+18, y+35, 20, 5);
+        //draw the legs
+        g.setColor(legColour);
+        g.fillRect(x+16, y+60, 5, 17);
+        g.fillRect(x+38, y+60, 5, 17);
+        //draw the feet
+        g.setColor(Color.BLACK);
+        g.fillArc(x+8, y+75, 20, 20, 0, 180);
+        g.fillArc(x+30, y+75, 20, 20, 0, 180);
+    }
+}

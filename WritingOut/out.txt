@@ -1,0 +1,10 @@
+
+Integers input:
+	  1  2  3  4  5  6  7  8  9  10
+
+Average: 
+	5.5
+
+Invalid input:
+	4t
+	4.5

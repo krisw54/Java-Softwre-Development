@@ -1,0 +1,1 @@
+stationery_shop.StationeryShopApplication

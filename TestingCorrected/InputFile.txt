@@ -1,0 +1,14 @@
+Teams
+A-Team:4
+B-Team:5
+Players
+Player 1:A-Team:Attack
+Player 2:A-Team:Defence
+Player 3:B-Team:Attack
+Player 4
+Player 5:A-Team:Attack
+Player 6:A-Team:Defence
+Player 7:B-Team:Attack
+Player 8:A-Team:Attack
+Player 9:B-Team:Attack
+Player 10:B-Team:Wing
